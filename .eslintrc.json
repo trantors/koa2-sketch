@@ -1,0 +1,53 @@
+{
+    "env": {
+        // "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    // "extends": "airbnb",
+    "parser" : "babel-eslint",
+    // "parser" : "Espree",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "babel",
+        "async-await"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "async-await/space-after-async": 2,
+        "async-await/space-after-await": 2,
+        "babel/generator-star-spacing": 1,
+        "babel/new-cap": 1,
+        "babel/array-bracket-spacing": 1,
+        "babel/object-curly-spacing": 1,
+        "babel/object-shorthand": 1,
+        "babel/arrow-parens": 1,
+        "babel/no-await-in-loop": 1,
+        "babel/flow-object-type": 1,
+        "babel/func-params-comma-dangle": 1
+    }
+}
